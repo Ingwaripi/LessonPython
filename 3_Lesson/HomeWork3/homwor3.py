@@ -16,7 +16,8 @@ def trans(x):
     while x:
         bit.append(x % 2)
         x >>= 1
-    return bit[::-1]
+        
+    return bit[::-1] # print(*bit, sep="") - вывод знаначений без скобок и разделителей
 
 result = trans(int(input("Enter number:")))
 print(result)

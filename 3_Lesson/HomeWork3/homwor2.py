@@ -23,7 +23,7 @@ def prod_pairs(array: list):
 
     for i in range(len_list // 2):
         res_list.append(array[i] * array[len_list - i - 1])
-
+        
     if len_list % 2:
         res_list.append(array[len_list // 2])
     return res_list
